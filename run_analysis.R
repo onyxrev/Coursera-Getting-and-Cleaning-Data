@@ -43,7 +43,7 @@ load_uci_set <- function(uci_set_file_location){
   
   # returns the standard deviation and mean labels in a label list
   mean_and_std_deviation_labels <- function(labels){
-    grep("(std|mean)\\(\\)-[A-Z]$", labels, value=TRUE)
+    grep("(std|mean|Mean)\\(\\).*$", labels, value=TRUE)
   }
   
   # takes a set and returns a data table with the average of each 
